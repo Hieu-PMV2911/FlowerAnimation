@@ -5,6 +5,9 @@ onload = () => {
 	}, 1000);
 };
 
+const audio = document.getElementById('myAudio');
+audio.play();
+
 const textElements = document.querySelectorAll('.text');
 
 function animateText() {
