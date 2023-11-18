@@ -8,10 +8,13 @@
 </head>
   
 <body class="not-loaded">
-	<div class="night">
+	<div class="night" id="not-loaded">
 		<div class="text-happy">
 			<div class="text-wrapper">
-				<audio id="myAudio" src="/happy.mp3" autoplay loop>aa</audio>
+				<audio id="audioPlayer" controls autoplay style="display: none;">
+					<source src="./happy.mp3" type="audio/mpeg">
+					Your browser does not support the audio element.
+				</audio>
 				<h1 class="text">H</h1>
 				<h1 class="text">a</h1>
 				<h1 class="text">p</h1>
@@ -32,7 +35,7 @@
 			<div class="rocket"></div>
 		</div>
 	</div>
-	<div class="flowers">
+	<div class="flowers" id="flowers">
 		<div class="flower flower--1">
 			<div class="flower__leafs flower__leafs--1">
 				<div class="flower__leaf flower__leaf--1"></div>
