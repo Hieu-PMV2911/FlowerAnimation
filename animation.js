@@ -6,31 +6,12 @@ onload = () => {
 };
 
 document.addEventListener('DOMContentLoaded', function() {
-  var audioPlayer = document.getElementById('audioPlayer');
   var startButton = document.getElementById('not-loaded');
 
   startButton.addEventListener('click', function() {
-    // Phát nhạc khi người dùng nhấp vào nút "Bắt đầu"
-    audioPlayer.play();
     startButton.style.background = 'none'; // Ẩn nút "Bắt đầu"
   });
 
-  audioPlayer.addEventListener('play', function() {
-    // Cập nhật giao diện người dùng khi nhạc được phát
-    console.log('Nhạc đang phát...');
-  });
-
-  audioPlayer.addEventListener('pause', function() {
-    // Cập nhật giao diện người dùng khi nhạc tạm dừng
-    console.log('Nhạc đã tạm dừng.');
-  });
-
-  audioPlayer.addEventListener('ended', function() {
-    // Reset trạng thái khi nhạc kết thúc
-    console.log('Nhạc đã kết thúc.');
-    audioPlayer.currentTime = 0;
-    startButton.style.display = 'block'; // Hiển thị lại nút "Bắt đầu"
-  });
 });
 
 const textElements = document.querySelectorAll('.text');
