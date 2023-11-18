@@ -11,7 +11,7 @@ function animateText() {
   let delay = 0;
   textElements.forEach((textElement) => {
     setTimeout(() => {
-      textElement.style.animation = 'fadeIn 0.5s ease-in-out forwards';
+      textElement.style.animation = 'fadeIn 6.5s ease-in-out forwards';
     }, delay);
     delay += 150;
   });
